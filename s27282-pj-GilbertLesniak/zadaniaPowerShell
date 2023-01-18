@@ -1,0 +1,28 @@
+*Zadania ze spotkania 6-7 Powershell*
+- Komendą Set-ExecutionPolicy Bypass umozliwilem sobie uruchamianie swoich skryptów.
+- Uruchomilem Get-Help Get-ExecutionPolicy i pobralem aktualizacje "get-help" do powershella.
+- Po pobraniu wyswietlily mi sie inne wersje tego polecenia możliwe do użycia, np."get-help Get-ExecutionPolicy -detailed"
+- Komendą #Get-Module -ListAvailable wyswietlilem liste wszystkich dostepnych modułów.
+- Nastepnie wyswietlilem wszystkie moduly w wersji 2.0 lub wyzszej komendą Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"}
+- Używająć Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} wyswietlilem wszystkie polecenia w dostepnych modułąch.
+- Kolejną komendą z listy wyświetliłem te komendy z "add-" lub "get-" w nazwie.
+- Nastepną linijką wypisałem je w postaci tabelki graficznej w nowym oknie.
+- Wypisałem je też do pliku tekstowego "mojaNazwaPliku", kolejna linijka przetworzyła komendy bez wypisywania.
+- Załadowałem moduł uzywajac Import-Module BitsTransfer
+- Używając linijki Start-BitsTransfer pobrałem na swój dysk C plik 500mb przeznaczony do sprawdzania szybkosci pobierania z adresu http://www.speedtest.beskidmedia.pl/download/500mb.bm
+- Sprawdziłem stan transferu przez Get-BitsTransfer, pobieranie pliku widzialem tez caly czas graficznie.
+- Zmierzylem czas komendy {Get-ChildItem -Path C:\Windows} uzywajac Measure-Command.
+- Dzieki aliasowi wyswietlilem skróty komendy Get-ChildItem.
+- Uzywajac kolejnej linijki wyswietlilem zawartosc katalogu głównego w odstepach czasowych, razem  pobranym wcześniej plikiem.
+- Uruchomilem notatnik używając operatora "call"
+1. Listowanie programów przez rejestr:
+- Wyswietlilem dyski dostepne w powershelu uzywajac Get-PSDrive.
+- Wszedłem do rejestr przez cd hklm:\
+- Wylistowałem sobie wszystkie zainstalowane aplikacje komenda ls po przejsciu do .\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+- Póżniej zrobiłem to w podany i bardziej przejrzysty sposób
+2. Listowanie programów przez WMI
+- Za pomocą Get-WmiObject -Class Win32_Product | Format-Table -AutoSize wylistowałem aplikacje
+- Nastepna komenda pozbyłem sie numerów z przodu, listując aplikacje nazwami oraz producentami
+- Kolejna komenda pozwolila mi wyswietlic pakiety Microsoftu, ale w srodku listy pojawil sie bląd "You cannot call a method on a null-valued expression."
+
+- Uruchomilem własną funkcje do uruchomienia notyfikacji, pozmieniałem pętle i treść poszczególnych notyfikacji i wszystko zadziałało, bardzo fajne.
