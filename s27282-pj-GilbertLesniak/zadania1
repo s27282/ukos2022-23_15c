@@ -5,31 +5,28 @@ Zadania 1. zjazd
 2.
 -Wyswietlilem zawartosc katalogu uzywajac komendy ls.
 3.
--Uzywajac komendy pwd sprawdzilem ze jestem w katalogu C:\Users\gilbe
+-Uzywajac komendy pwd sprawdzilem ze jestem w katalogu /home/ubuntu
 4.
-Przeniosłem się komendą cd do katalogu Onedrive, a z niego przeniosłem sie na pulpit kolejną komenda cd.
--Równie dobrze moglem użyć komendy cd cnedrive/pulpit
+Przeniosłem się na pulpit komendą cd Dekstop
 5.
--Komenda pwd sprawdzilem ze jestem w katalogu C:\Users\gilbe\onedrive\pulpit
+-Komenda pwd sprawdzilem ze jestem w katalogu home/ubuntu/Dekstop
 6.
--Wyświetliłem wszystkie katalogi znajdujące się na pulpicie komendą ls. moglem tez uzyc tree.
+-Wyświetliłem wszystkie katalogi znajdujące się na pulpicie komendą ls. Moglem tez uzyc tree.
 7.
--Używajac komendy ls ../.. wyswietlilem wszystkie katalogi mojego katalogu domowego.
+-Używajac komendy ls .. wyswietlilem wszystkie katalogi mojego katalogu domowego.
 8.
--Używajac komendy cd ../Obrazy, przeszedlem do katalogu "Obrazy".
+-Używajac komendy cd ../Pictures, przeszedlem do katalogu "Pictures".
 9.
--Uzywajac komendy pwd sprawdzilem ze jestem w katalogu C:\Users\gilbe\onedrive\obrazy
+-Uzywajac komendy pwd sprawdzilem ze jestem w katalogu /home/ubuntu/Pictures
 10. 
--Wyswietlilo mi blad po wpisaniu ././././././
--Sprobowalem cd ././././././, lecz takze nic sie nie wydarzylo
+-Wyswietlilo mi bash: ././././././ is a directory po wpisaniu ././././././, co oznacza ze to polecenie jest ścieżką
+-Sprobowalem cd ././././././, wydaje mi sie że przenosiło mnie co ścieżce w "przód" i w "tył", jestem w tym samym miejscu.
 11.
--Komenda cd /users przeszedlem do katalogu domowego
--Dowiedzialem sie ze w windowsach nie ma sciśle okreslonego katalogu domowego i za taki traktuje sie /users
+-Komenda cd /home przeszedlem do katalogu domowego
+
 12.
--Po wpisaniu komendy cd/root wyswietlil mi sie blad
+-Po wpisaniu komendy cd/root wyswietlil mi sie blad, nie można wejść do katalogu root na uprawnieniach zwyklego uzytkownika
 13. 
--Po wcisnieciu Ctrl+Alt+F1 nic sie nie stalo, ale wiem ze okno terminalu powinno otworzyc sie na calym ekranie
+-Po wcisnieciu Ctrl+Alt+F1 uruchomilem terminal na pelnym ekranie
 14.
--Po wcisnieciu Alt+F7 tez nic sie nie stalo, ale tez wiem ze powinno wrocic do normalnych rozmiarow.
-- *Wynika to pewnie z tego ze na moim laptopie do uzycia przyciskow f1, f2 etc..
- Potrzebne jest wcisniecie przycisku Fn, wydaje mi sie ze przez to te kombinacje u mnie nie dzialaja.
+-Po wcisnieciu Alt+F7 wrócił do normalnych rozmiarow
