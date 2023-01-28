@@ -14,9 +14,16 @@ Zjazd 2. zadania
  -Nie możemy
 -Poleceniem cd- wrócimy do katalogu bez nadanych uprawnień.
 3.
-Niestety nie bylo mnie na tych cwiczeniach, a przez problemy z kluczem do gita, pozno bylem w stanie wykonac to zadanie, sprobuje jeszcze jutro z rana kogos zlapac.
+-Stworzylem pusty plik w katalogu domowym o nazwie "plik2" poleceniem touch
+-Zmieniłem uprawnienia do pliku komenda chmod
+-Z kolegą Rolandem dopisalismy "wiadomosci" do pliku komendami echo"..">plik2 oraz echo"..">>plik2
+-Pierwszy sposób nadpisuje plik, a drugi je nadpisywał w kolejnej linii
+-Powtórzyliśmy to z komenda tail i z drugim terminalem i moglismy rozmawiac jak na czacie.
 4.
--Utworzyłem podkatalog public_html, a w nim plik strona_html
--Nadałem uprawnienia do odczytu i wykonania  dla others, dla obydwu katalogów i pliku tekstowego, niestety strona nie wyświetla mi sie.
--Testowałem polecenie umask na plikach tekstowych w stworzonym katalogu
-Wydaje mi sie że operacją jest AND
+-Utworzyłem podkatalog public_html, a w nim plik strona.html
+-Nadałem uprawnienia chmod 705, do katalogu domowego, katalogu public_html, pliku strona.html, to są minimalne uprawnienia.
+5.
+-Testowałem polecenie umask
+-Dzieki niemu, wszystkie utworzone przeze mnie pliki maja takie uprawnienia, jak "maska" która sobie nadałem
+-Domyślnie jest to 022
+-Operacją jest koniunkcja
