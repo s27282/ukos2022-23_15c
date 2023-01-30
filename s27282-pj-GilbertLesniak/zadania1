@@ -22,11 +22,11 @@ Przeniosłem się na pulpit komendą cd Dekstop
 -Wyswietlilo mi bash: ././././././ is a directory po wpisaniu ././././././, co oznacza ze to polecenie jest ścieżką
 -Sprobowalem cd ././././././, wydaje mi sie że przenosiło mnie co ścieżce w "przód" i w "tył", jestem w tym samym miejscu.
 11.
--Komenda cd /home przeszedlem do katalogu domowego
+-Komenda cd /home/ubuntu przeszedlem do katalogu domowego
 
 12.
 -Po wpisaniu komendy cd/root wyswietlil mi sie blad, nie można wejść do katalogu root na uprawnieniach zwyklego uzytkownika
 13. 
--Po wcisnieciu Ctrl+Alt+F1 uruchomilem terminal na pelnym ekranie
+-Po wcisnieciu Ctrl+Alt+F1 uruchomilem pierwszy terminal na pelnym ekranie, na którym mógłbym się zalogować
 14.
--Po wcisnieciu Alt+F7 wrócił do normalnych rozmiarow
+-Po wcisnieciu Alt+F7 terminal został zamknięty i wróciłem na pulpit maszyny wirtualnej
